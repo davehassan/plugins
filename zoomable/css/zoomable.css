@@ -1,0 +1,53 @@
+html, body, section, article, li, img, div,
+h1, h2, p, strong, em, a, ul, figure {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: inherit;
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.zoomable {
+  position: relative;
+  width: 150px;
+  left: 100px;
+  top: 100px;k
+}
+
+.zoomable img {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.focus-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 48px;
+  width: 48px;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.5);
+}

@@ -2,7 +2,7 @@ $.Thumbnails = function (el) {
   this.$el = $(el);
   this.$active = this.$el.find(".active");
   this.$gutter = this.$el.find(".gutter");
-  this.$gutterImages = this.$el.find(".gutter-images");
+  this.$gutterImages = this.$gutter.find(".gutter-images");
 
   var $firstImg = this.$gutterImages.find('img').first();
   this.activate($firstImg);
@@ -45,10 +45,10 @@ $.Thumbnails.prototype.bindHandlers = function () {
     this.gutterIdx += dir;
     if (this.gutterIdx < 0) {
       this.gutterIdx = 0;
-    } else if (this.gutterIdx >= this.$images.length) {
-      this.gutterIdx = this.$images.length - 1;
+    } else if (this.gutterIdx >= this.$images.length - 5) {
+      this.gutterIdx = this.$images.length - 5;
     }
-    
+
     this.fillGutterImages();
   }.bind(this));
 };
