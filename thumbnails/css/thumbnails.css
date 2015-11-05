@@ -1,0 +1,81 @@
+html, body, section, article, li, img, div,
+h1, h2, p, strong, em, a, ul, figure {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: inherit;
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.thumbnails {
+  width: 400px;
+  height: 400px;
+  margin: 10px auto;
+}
+
+.active {
+  width: 100%;
+  height: 100%;
+}
+
+.active img {
+  width: 100%;
+  height: 100%;
+}
+
+.gutter {
+  position: relative;
+  margin: 10px 0;
+}
+
+.gutter-images {
+  height: 50px;
+  width: 90%;
+  position: relative;
+  left: 5%;
+}
+
+.gutter-images img {
+  width: 20%;
+  height: 100%;
+  display: block;
+  float: left;
+}
+
+.nav {
+  position: absolute;
+  width: 5%;
+  background-color: #585858;
+  color: white;
+  font-size: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left {
+  left: 0%;
+}
+
+.right {
+  right: 0%;
+}

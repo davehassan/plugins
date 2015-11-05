@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/thumbnails.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/thumbnails.js"></script>
+
+    <title>Van Damme!!!</title>
+  </head>
+  <body>
+
+  <div class="thumbnails">
+    <div class="active"></div>
+
+    <div class="gutter group">
+      <a href="#" class="nav left" data-dir="-1">&lt;</a>
+      <div class="gutter-images group">
+        <img src="img/jean-claude-1.jpg">
+        <img src="img/jean-claude-2.jpg">
+        <img src="img/jean-claude-3.png">
+        <img src="img/jean-claude-4.jpg">
+        <img src="img/jean-claude-5.jpg">
+        <img src="img/jean-claude-6.jpg">
+        <img src="img/jean-claude-7.jpg">
+        <img src="img/jean-claude-8.jpg">
+        <img src="img/jean-claude-9.jpg">
+        <img src="img/jean-claude-1.jpg">
+        <img src="img/jean-claude-2.jpg">
+        <img src="img/jean-claude-3.png">
+        <img src="img/jean-claude-4.jpg">
+        <img src="img/jean-claude-5.jpg">
+        <img src="img/jean-claude-6.jpg">
+      </div>
+      <a href="#" class="nav right" data-dir="1">&gt;</a>
+    </div>
+  </div>
+
+  <script>
+  $(function () {
+    $(".thumbnails").thumbnails();
+  });
+  </script>
+  </body>
+</html>
