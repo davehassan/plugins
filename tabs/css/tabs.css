@@ -21,10 +21,19 @@ ul {
   clear: both;
   display: block;
 }
+
+.content-tabs {
+  position: relative;
+}
+
 .content-tabs article {
-  display: none;
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 300px);
+  opacity: 0;
   margin: 0 auto;
   text-align: center;
+  width: 600px;
 }
 
 .content-tabs h1 {
@@ -33,7 +42,7 @@ ul {
 }
 
 .content-tabs .active {
-  display: block;
+  opacity: 1;
 }
 
 body {
@@ -54,4 +63,8 @@ body {
   margin: 0 10px;
   display: block;
   border-radius: 5px;
+}
+
+.transitioning {
+  transition: opacity 500ms linear;
 }

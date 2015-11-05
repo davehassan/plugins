@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/kitties.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="http://placecorgi.com/javascripts/jquery.placecorgi.js"></script>
+    <script src="js/kitties.js"></script>
+
+    <title>Kitty Carousel</title>
+  </head>
+  <body>
+
+    <figure class="carousel">
+      <ul class="items">
+        <li><img src="" class="corgi"></li>
+        <li><img src="" class="corgi right"></li>
+        <li><img src="" class="corgi"></li>
+        <li><img src="" class="corgi"></li>
+        <li><img src="" class="corgi"></li>
+        <li><img src="" class="corgi"></li>
+      </ul>
+
+      <button class="slide-left" data-dir="-1">Prev</button>
+      <button class="slide-right" data-dir="1">Next</button>
+    </figure>
+
+    <script>
+      $(function () {
+        $("body").placecorgi();
+
+        $(".carousel").carousel();
+      });
+    </script>
+  </body>
+</html>

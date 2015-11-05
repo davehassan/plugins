@@ -1,0 +1,82 @@
+html, body, section, article, li, img,
+h1, h2, p, strong, em, a, ul, figure {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: inherit;
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+img {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+.carousel {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 5px solid black;
+  position: relative;
+  margin: 20px auto;
+}
+
+.carousel ul {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel li {
+  position: absolute;
+}
+
+.active {
+  left: 0%;
+  transition: left 500ms linear;
+}
+
+.carousel button {
+  position: absolute;
+  top: calc(50% - 15px);
+  height: 30px;
+  width: 60px;
+}
+
+
+.carousel button.slide-left {
+  left: -70px;
+}
+.carousel button.slide-right {
+  right: -70px;
+}
+
+.right {
+  left: 100%;
+}
+
+.left {
+  left: -100%;
+}
+
+.old-active {
+  left: 0%;
+  transition: left 500ms linear;
+}
