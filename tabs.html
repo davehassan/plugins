@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Cool Website</title>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/tabs.js"></script>
+    <link href="css/tabs.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <ul class="tabs group" data-content-tabs=".content-tabs">
+      <li><a href="#article-ridgeback">Ridgeback</a></li>
+      <li><a href="#article-shihtzu">Shihtzu</a></li>
+      <li><a href="#article-chow">Chow Chow</a></li>
+    </ul>
+
+    <section class="content-tabs">
+      <article id="article-ridgeback" class="active">
+        <h1>Rhodesian Ridgeback</h1>
+        <p>The Rhodesian ridgeback is a loving, loyal, and devoted family member. They are intelligent and independent and always have an opinion. They are not naturally obedient, but they will want to please you, as long as what you are asking makes sense to them. It is important to train them for obedience, and to be consistent with your expectations. They are usually easy to housetrain. They are a natural watchdog and they seem to save their barking for when it matters (so pay attention when he barks). They are protective of their families, and are good with children. Just remember that these are big, playful, rambunctious dogs, who can knock over a child by accident and not even know it. Also, a happy Ridgeback tail can make for a very unhappy toddler. They usually adore children, and like to be around other dogs, but can be aggressive towards cats. They are usually reserved with strangers. The Ridgeback needs daily exercise, and will need a fenced-in yard. Be aware that they are athletic and can jump a five-foot fence easily. (They also excel at agility!) Their prey instinct is high, and they will chase cats and squirrels no matter how loudly you scream their name and the recall command. If you are smart enough to have them on a leash, take care that they don't yank you out into oncoming traffic in hot pursuit of a plastic bag being blown across the road. They also have a good sense of smell and are liable to take off on a scent trail with no warning. They are not car smart! And if he gets away, you will be hard-pressed to catch him! A young ridgeback is energetic, but as they mature, they become much more laid back. In fact, they can be incredibly lazy at times. They probably will not exercise unless you do it with them. Sometimes they've even been accused of being stubborn. However, a bored Ridgeback can be bad news. They are perfectly capable of destroying your home when bored. Don't be surprised to find one standing on your countertop pre-rinsing your dishes. They also love to dig and will eat anything: all the food in your house, sticks, rocks, crayons. They are people dogs, and cuddly ones at that. They will try to sleep in your bed, probably under the covers, probably cheek to cheek. They will try to sit on your lap while you're watching TV. They see nothing odd about an 85-pound lapdog. They will also try to take over your couch and favorite chair.
+        </p>
+      </article>
+
+      <article id="article-shihtzu">
+        <h1>Shihtzu</h1>
+        <p>The Shih Tzu is a dignified, lively, alert, happy, sweet and playful. He craves your companionship and just wants to be with you. He's very affectionate and loves to cuddle and kiss and sit on your lap. He may be sweet, but he knows how to stand up for himself if confronted. He's friendly and sociable with strangers. He doesn't need much exercise and will get most of it just running around inside. He's one of the most popular dogs in the United States.
+        </p>
+      </article>
+
+      <article id="article-chow">
+        <h1>Chow Chow</h1>
+        <p>One of the oldest breeds in the world, the Chow Chow is a fiercely loyal dog who is reserved with his affection. While cuddly little powder puffs as puppies, they often end up developing difficult behaviors at 5-8 months old. They can be food aggressive, aggressively protective of their owners and territory, and they can exhibit irritable aggression. These traits were bred into them, and it is imperative that a Chow owner starts obedience training when the Chow is very young, so that the owner can control these behaviors. The Chow is independent, stubborn, and pushy and his owner will have to earn his respect early. He is highly intelligent, so will learn from obedience training, but still may choose not to be obedient. They are not exactly eager to please. They make great watchdogs as they are naturally territorial. They are protective of their owners and their children and they only bark for a reason. They are reserved with strangers and families will need to make their visitors aware that Chows can be fierce if a stranger approaches "his" property. They do well with children if they are brought up with them, and if the children know how to behave around a Chow. They also have poor peripheral vision, so one must take care approaching them from behind or from the side. This could startle them and cause them to be defensive. Chows only need minimal to moderate amounts of exercise. They like to go for walks. They are not big on rain. They also don't like to play fetch. They need to be kept on a leash or in a fenced-in area as they have no road-sense, and they will chase and potentially kill sheep, squirrels, cats, and anything else they see as prey. They also don't do well with same-sex dogs and can be very aggressive with them. However, they are usually quiet, exceptionally fast at housetraining, not prone to digging, and seem to have no interest in destroying furniture. (They are a little too high-brow for that.) They seem to have an innate dignity that they work to preserve. Some Chows breathe heavily and stress easily during heat, exercise and excitement. They will need access to water and protection from the sun and heat at all times. In short, these black-tongued, lion-like dogs make devoted companions, but don't mistake them for a lapdog. And be sure you are ready for a dog that wants to have his say.
+        </p>
+      </article>
+    </section>
+
+
+
+    <script>
+      $(function() {
+        $(".tabs").tabs();
+      });
+    </script>
+  </body>
+</html>
